@@ -1,0 +1,18 @@
+{
+  "name": "@openclaw/travis-soul",
+  "version": "2026.2.24",
+  "private": true,
+  "description": "Travis soul injection — T.I.L.U. identity, memory, governance overlay for 296",
+  "type": "module",
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.1.26"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
