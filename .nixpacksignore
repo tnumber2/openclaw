@@ -1,4 +1,5 @@
 # Exclude all extensions except the ones we actually need
+# This reduces the Railway image from 4.7GB to ~400MB
 extensions/bluebubbles
 extensions/copilot-proxy
 extensions/device-pair
@@ -33,18 +34,8 @@ extensions/voice-call
 extensions/whatsapp
 extensions/zalo
 extensions/zalouser
-# Test files
-**/*.test.ts
-**/*.spec.ts
-**/test/**
-**/tests/**
-# Git
-.git
-.github
-# Docs
-docs
-*.md
-!README.md
-# Local config
-.env
-.env.*
+# Keep:
+# extensions/telegram
+# extensions/travis-soul
+# extensions/shared
+# extensions/memory-core
