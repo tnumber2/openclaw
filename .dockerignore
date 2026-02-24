@@ -1,4 +1,18 @@
-# Exclude all extensions except the ones we actually need
+# Git
+.git
+.github
+
+# Docs
+docs
+
+# Test files
+**/*.test.ts
+**/*.spec.ts
+**/test/**
+**/tests/**
+**/vitest*
+
+# Unused extensions — only keep telegram, travis-soul, shared, memory-core
 extensions/bluebubbles
 extensions/copilot-proxy
 extensions/device-pair
@@ -33,18 +47,3 @@ extensions/voice-call
 extensions/whatsapp
 extensions/zalo
 extensions/zalouser
-# Test files
-**/*.test.ts
-**/*.spec.ts
-**/test/**
-**/tests/**
-# Git
-.git
-.github
-# Docs
-docs
-*.md
-!README.md
-# Local config
-.env
-.env.*
