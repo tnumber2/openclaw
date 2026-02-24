@@ -1,0 +1,42 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-haiku-4-5-20251001",
+        "fallbacks": []
+      },
+      "compaction": {
+        "mode": "safeguard"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true
+  },
+  "channels": {
+    "telegram": {
+      "dmPolicy": "open",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "mode": "remote"
+  },
+  "plugins": {
+    "allow": ["travis-soul", "telegram"],
+    "load": {
+      "paths": ["./extensions/travis-soul"]
+    },
+    "entries": {
+      "telegram": {
+        "enabled": true
+      },
+      "travis-soul": {
+        "enabled": true
+      }
+    }
+  }
+}
